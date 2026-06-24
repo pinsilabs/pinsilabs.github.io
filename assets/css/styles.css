@@ -165,7 +165,7 @@ section.section-home-cta {
 }
 
 .btn.btn-rounded {
-  border-radius: 100px;
+  border-radius: 100px 100px 0 100px;
 }
 
 .btn.btn-full {
@@ -333,7 +333,7 @@ footer {
   max-width: 640px;
   margin: 0 auto;
   font-weight: 900;
-  font-size: 36px;
+  font-size: 48px;
   line-height: 125%;
   letter-spacing: 2px;
   text-align: center;
@@ -344,6 +344,23 @@ footer {
 @media (min-width: 768px) {
   .home-hero-text h1 {
     font-size: 56px;
+  }
+}
+.home-hero-text p {
+  width: 100%;
+  max-width: 640px;
+  margin: 5px auto 0;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 125%;
+  letter-spacing: 0.5px;
+  text-align: center;
+  color: #A5A8B4;
+}
+
+@media (min-width: 768px) {
+  .home-hero-text p {
+    font-size: 20px;
   }
 }
 .home-hero-button {
@@ -357,12 +374,12 @@ footer {
   -ms-flex-align: center;
   align-items: center;
   width: 100%;
-  margin: 20px 0 0;
+  margin: 30px 0 0;
 }
 
 @media (min-width: 768px) {
   .home-hero-button {
-    margin: 30px 0 0;
+    margin: 40px 0 0;
   }
 }
 .home-works-container {
@@ -380,9 +397,9 @@ footer {
   display: flex;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
   -webkit-box-align: start;
   -ms-flex-align: start;
   align-items: flex-start;
@@ -419,7 +436,6 @@ footer {
   margin: 0;
   font-size: 20px;
   line-height: 125%;
-  text-align: center;
   color: #252D4A;
 }
 
@@ -435,8 +451,7 @@ footer {
 .home-works-item p {
   margin: 0;
   font-size: 16px;
-  text-align: center;
-  color: #9FA1A7;
+  color: #A5A8B4;
 }
 
 .home-cta-wrapper {
@@ -455,7 +470,6 @@ footer {
   align-items: center;
   gap: 20px;
   width: 100%;
-  max-width: 920px;
   margin: 0 auto;
 }
 
@@ -469,6 +483,7 @@ footer {
     -ms-flex-pack: justify;
     justify-content: space-between;
     gap: 60px;
+    max-width: 920px;
   }
 }
 .home-cta-wrapper h2 {
@@ -488,5 +503,27 @@ footer {
 @media (min-width: 992px) {
   .home-cta-wrapper h2 {
     font-size: 48px;
+  }
+}
+.home-cta-wrapper p {
+  width: 100%;
+  margin: 5px 0 0;
+  padding: 0 0 0 2px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  text-align: center;
+  color: #A5A8B4;
+}
+
+@media (min-width: 768px) {
+  .home-cta-wrapper p {
+    text-align: left;
+  }
+}
+@media (min-width: 992px) {
+  .home-cta-wrapper p {
+    max-width: 560px;
+    font-size: 20px;
   }
 }

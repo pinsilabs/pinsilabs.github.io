@@ -35,8 +35,9 @@
         <section class="section-home-hero">
           <div class="main-container">
             <div class="home-hero-text">
-              <h1>We Build Websites With All Our Heart</h1>
-              <div class="home-hero-button"><a class="btn btn-main btn-rounded btn-cta" href="mailto:pinsilabs@gmail.com"> Contact Us</a></div>
+              <h1>Pinsilabs</h1>
+              <p>We build websites with all our heart</p>
+              <div class="home-hero-button"><a class="btn btn-main btn-rounded btn-cta" href="mailto:pinsilabs@gmail.com">Let's Talk</a></div>
             </div>
           </div>
         </section>
@@ -62,7 +63,10 @@
         <section class="section-home-cta">
           <div class="main-container">
             <div class="home-cta-wrapper">
-              <h2>Interested to work with us?</h2><a class="btn btn-white btn-rounded btn-cta" href="mailto:pinsilabs@gmail.com"> Let's Talk</a>
+              <div>
+                <h2>Ready to build a website?</h2>
+                <p>Let's build a digital asset that works as hard as you do</p>
+              </div><a class="btn btn-white btn-rounded btn-cta" href="mailto:pinsilabs@gmail.com">Let's Talk</a>
             </div>
           </div>
         </section>
@@ -72,7 +76,7 @@
           <div class="main-container">
             <div class="footer-wrapper">
               <div class="footer-copy">
-                <p>Copyright &copy; 2025</p>
+                <p>Copyright &copy; <span id="current-year">&nbsp;</span></p>
               </div>
               <div class="footer-social">
                 <ul>
@@ -93,8 +97,16 @@
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
-    
       gtag('config', 'G-D74EVSW5M6');
+    </script>
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        var currentYearSpan = document.getElementById('current-year');
+        if (currentYearSpan) {
+          var currentYear = new Date().getFullYear();
+          currentYearSpan.textContent = currentYear;
+        }
+      });
     </script>
   </body>
 </html>
