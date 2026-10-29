@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - Pinsilabs</title>
+    <!-- SEO-->
+    <meta name="description" content="We build apps and games with all our heart">
+    <meta name="robots" content="index, follow">
+    <!-- Favicon-->
+    <link href="./../assets/images/favicon.png" rel="icon" type="image/x-icon">
+    <!-- Styles-->
+    <link href="./../assets/css/styles.min.css" rel="stylesheet">
+  </head>
+  <body>
+    <div class="app">
+      <header>
+        <div class="header-container">
+          <div class="main-container">
+            <div class="header-wrapper">
+              <div class="header-logo"><a href="../"><img src="./../assets/images/logo.svg" alt="Pinsilabs"></a></div>
+              <div class="header-nav">
+                <div class="mobile-nav"><span></span><span></span></div>
+                <div class="nav-wrapper">
+                  <nav>
+                    <ul>
+                      <li><a href="https://www.instagram.com/pinsilabs/?hl=en" target="_blank">Instagram</a></li>
+                      <li><a href="https://github.com/pinsilabs" target="_blank">GitHub</a></li>
+                      <li><a href="https://in.linkedin.com/company/pinsilabs" target="_blank">LinkedIn</a></li>
+                    </ul>
+                  </nav>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <main>
+        <section class="section-privacy-policy">
+          <div class="main-container">
+            <div class="privacy-policy-container">
+              <h1>Privacy Policy</h1>
+              <div class="privacy-policy-wrapper"><a href="./zira-run">Zira Run</a></div>
+            </div>
+          </div>
+        </section>
+      </main>
+      <footer>
+        <div class="footer-container">
+          <div class="main-container">
+            <div class="footer-wrapper">
+              <div class="footer-copy">
+                <p>Copyright &copy; <span id="current-year">&nbsp;</span></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <!-- Scripts-->
+    <script src="./../assets/js/scripts.min.js"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-D74EVSW5M6"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-D74EVSW5M6');
+    </script>
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        var currentYearSpan = document.getElementById('current-year');
+        if (currentYearSpan) {
+          var currentYear = new Date().getFullYear();
+          currentYearSpan.textContent = currentYear;
+        }
+      });
+    </script>
+  </body>
+</html>

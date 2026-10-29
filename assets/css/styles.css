@@ -52,6 +52,8 @@ body {
   margin: 0;
   padding: 0;
   font-family: "Poppins", sans-serif;
+  color: #252D4A;
+  background-color: #F4F6FB;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
 }
@@ -80,7 +82,7 @@ section.section-home-hero {
   -ms-flex-align: center;
   align-items: center;
   min-height: 576px;
-  background-color: #1D2644;
+  background-color: #F4F6FB;
 }
 
 @media (min-width: 768px) {
@@ -117,13 +119,36 @@ section.section-home-cta {
     padding: 120px 0;
   }
 }
+section.section-privacy-policy {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  min-height: 576px;
+}
+
+@media (min-width: 768px) {
+  section.section-privacy-policy {
+    min-height: 800px;
+  }
+}
+section.section-zira-run {
+  padding: 120px 0 0;
+}
+
+@media (min-width: 768px) {
+  section.section-zira-run {
+    padding: 160px 0 80px;
+  }
+}
 .app {
   position: relative;
   overflow: hidden;
-}
-
-.main-content {
-  position: relative;
 }
 
 .main-container {
@@ -229,7 +254,7 @@ section.section-home-cta {
 }
 
 .btn.btn-rounded {
-  border-radius: 100px 100px 0 100px;
+  border-radius: 100px;
 }
 
 .btn.btn-full {
@@ -297,7 +322,7 @@ header {
 
 .header-nav nav ul li a {
   font-size: 14px;
-  color: #FFFFFF;
+  color: #252D4A;
 }
 
 .header-nav nav ul li a:hover {
@@ -394,7 +419,7 @@ header {
   }
 }
 footer {
-  background-color: #1D2644;
+  background-color: #F4F6FB;
 }
 
 .footer-container {
@@ -410,9 +435,9 @@ footer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
@@ -422,7 +447,6 @@ footer {
   margin: 0;
   font-size: 14px;
   line-height: 125%;
-  color: #FFFFFF;
 }
 
 .footer-social ul {
@@ -480,7 +504,6 @@ footer {
   letter-spacing: 2px;
   text-align: center;
   text-transform: uppercase;
-  color: #FFFFFF;
 }
 
 @media (min-width: 768px) {
@@ -802,5 +825,58 @@ footer {
   .home-cta-wrapper p {
     max-width: 560px;
     font-size: 20px;
+  }
+}
+.privacy-policy-container h1 {
+  margin: 0;
+  font-size: 24px;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .privacy-policy-container h1 {
+    font-size: 48px;
+  }
+}
+.privacy-policy-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  margin: 60px 0 0;
+}
+
+.privacy-policy-wrapper a {
+  color: #252D4A;
+  text-decoration: underline;
+}
+
+.zira-run-container h1 {
+  margin: 0;
+  font-size: 24px;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .zira-run-container h1 {
+    font-size: 48px;
+  }
+}
+.zira-run-wrapper {
+  margin: 60px 0 0;
+}
+
+.zira-run-wrapper h2 {
+  font-size: 20px;
+}
+
+@media (min-width: 768px) {
+  .zira-run-wrapper h2 {
+    font-size: 28px;
   }
 }
